@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #c6d4df;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container {
+    max-width: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b2838;
+    padding: 10px 20px;
+    border-bottom: 2px solid black;
+}
+
+.header h1 {
+    margin: 0;
+    color: white;
+}
+
+.header img {
+    height: 100px;
+    width: 50%;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-info h2 {
+    margin: 0;
+    color: black;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: black;
+}
+
+.install-steam {
+    background-color: fuchsia;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: small;
+    margin-left: auto;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.level {
+    color: black;
+    border: 2px solid black;
+    border-radius: 1000px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.level-text {
+    display: flex;
+
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    background-color: rgba(27, 40,  56, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
