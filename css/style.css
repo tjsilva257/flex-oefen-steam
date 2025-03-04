@@ -7,27 +7,29 @@
 body {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #c6d4df;
-    margin: 0;
-    padding: 0;
+    background-color: lightblue;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .flex-container {
-    max-width: 100vh;
     margin: 0 auto;
     padding: 20px;
 }
 
 .header {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #1b2838;
     padding: 10px 20px;
     border-bottom: 2px solid black;
+}
+
+.header > .header-img {
+    height: 100px;
+    width: 500px;
 }
 
 .header h1 {
@@ -74,11 +76,18 @@ body {
 .install-steam {
     background-color: fuchsia;
     color: white;
-    padding: 10px 20px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-size: small;
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+
+.install-steam > p {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
 }
 
 .profile img {
@@ -101,7 +110,6 @@ body {
 
 .level-text {
     display: flex;
-
 }
 
 .user-info {

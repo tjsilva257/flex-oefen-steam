@@ -1,3 +1,7 @@
+<?php
+  include 'steam_mock_data.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +13,7 @@
   <body>
     <div class="flex-container">
       <div class="header">
-        <img src="img/steam.png" alt="steam">
+        <img class="header-img" src="img/steam.png" alt="steam">
         <div class="nav">
           <a href="#">STORE</a>
           <a href="#">COMMUNITY</a>
@@ -22,14 +26,16 @@
             <span>User</span>
             <span>0,00$</span>
           </div>
-          <a href="#" class="install-steam">Install steam</a>
+          <div class="install-steam">
+              <p>Install Steam</p>
+          </div>
         </div>
       </div>
       <div class="profile">
-        <img src="img/pfp.png" alt="profile pic">
+        <img src="<?php echo $steamProfile['avatar']; ?>" alt="profile pic">
         <div class="profile-info">
-          <h2>PAU</h2>
-          <p>Tiago van Bennekom, Voorburg, The Netherlands</p>
+          <h2><?php echo $steamProfile['username']; ?></h2>
+          <p><?php echo $steamProfile['real_name']; ?>, <?php echo $steamProfile['location']; ?></p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             quos delectus eaque labore exercitationem consequuntur magnam rerum
@@ -39,6 +45,13 @@
           <p class="level-text">Level</p>
           <div class="level">69</div>
         </div>
+          <div class="profile-games">
+              <ul>
+                 <?php foreach ($steamProfile['recent_activity'] as $game) : ?>
+                  <li><?php echo $game['game'] . ' ' . $game['hours'] . 'uur gespeeld'; ?></li>
+                  <?php endforeach; ?>
+               </ul>
+          </div>
       </div>
     </div>
   </body>
