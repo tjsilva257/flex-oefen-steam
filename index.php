@@ -32,8 +32,13 @@
         </div>
       </div>
       <div class="profile">
-        <img src="<?php echo $steamProfile['avatar']; ?>" alt="profile pic">
+        <div class="profile-header">
+          <div class="profile-header-info">
+            <h2>Profile</h2>
+          </div>
+
         <div class="profile-info">
+            <img src="<?php echo $steamProfile['avatar']; ?>" alt="profile pic">
           <h2><?php echo $steamProfile['username']; ?></h2>
           <p><?php echo $steamProfile['real_name']; ?>, <?php echo $steamProfile['location']; ?></p>
           <p>
@@ -45,6 +50,10 @@
           <p class="level-text">Level</p>
           <div class="level">69</div>
         </div>
+        <div class="profile-stats">
+            <div class="profile-stats-info">
+                <h2>Stats</h2>
+            </div>
           <div class="profile-games">
               <ul>
                  <?php foreach ($steamProfile['recent_activity'] as $game) : ?>
@@ -52,6 +61,8 @@
                   <?php endforeach; ?>
                </ul>
           </div>
+            <div class="profile-badges">
+                <p>Badges</p>
       </div>
     </div>
   </body>

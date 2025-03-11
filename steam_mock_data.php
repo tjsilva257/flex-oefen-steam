@@ -1,9 +1,9 @@
 <?php
 
 $steamProfile = [
-    'username' => 'Gamer123',
+    'username' => 'pau',
     'avatar' => 'img/pfp.png',
-    'real_name' => 'John Doe',
+    'real_name' => 'Tiago van Bennekom',
     'location' => 'Voorburg, Netherlands',
     'level' => 25,
     'status' => 'Online',
