@@ -168,4 +168,9 @@ body {
     padding: 10px;
     background-color: #1b2838;
     border-radius: 10px;
+    text-align: center;
+}
+
+.profile-games > ul > li > img {
+    width: 5px;
 }
